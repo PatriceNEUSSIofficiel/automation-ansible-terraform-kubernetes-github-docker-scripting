@@ -1,9 +1,7 @@
+#### WORK ET WAYO 
 
 
-#####################################################    WORK ET YAMO       #############################################################
-
-
-############  1. Création directe de pods un à un :
+####  1. Création directe de pods un à un :
 
 C'est la méthode la plus basique pour créer des pods dans Kubernetes.
 Vous pouvez créer un pod individuel en définissant directement un objet
@@ -14,7 +12,7 @@ n'offre pas de mécanismes de redémarrage automatique en cas de
 défaillance du pod, de montée en charge, ou de déploiement de nouvelles
 versions.
 
-##############  2. Replication Controller :
+#### 2. Replication Controller :
 
 Le Replication Controller est une ressource Kubernetes plus ancienne qui a
 été remplacée par ReplicaSet, mais qui mérite néanmoins d'être
@@ -25,7 +23,7 @@ nouveaux pods lorsque cela est nécessaire. Cependant, le Replication
 Controller n'offre pas de sélecteurs basés sur des ensembles d'étiquettes
 plus complexes et puissants.
 
-############## 3. ReplicaSet :
+#### 3. ReplicaSet :
 
 Un ReplicaSet est l'évolution du Replication Controller, et il est préférable
 de l'utiliser au lieu du Replication Controller. Le ReplicaSet offre les
@@ -37,7 +35,7 @@ principalement utilisé pour garantir un nombre spécifié de répliques de
 pods identiques, mais il est recommandé d'utiliser la ressource Deployment
 pour des cas d'utilisation plus avancés.
 
-############## 4. Deployment :
+#### 4. Deployment :
 
 Le Deployment est une ressource Kubernetes de haut niveau qui utilise un
 ReplicaSet sous-jacent pour gérer les pods. Le Deployment permet dedéfinir des mises à jour de manière déclarative, de gérer les versions, de
@@ -46,7 +44,7 @@ mettre à l'échelle les applications et de gérer les déploiements progressifs
 opérations de rollback. Le Deployment est actuellement le moyen
 recommandé pour gérer les déploiements d'applications dans Kubernetes.
 
-#############   Méthode la plus avantageuse :
+####   Méthode la plus avantageuse :
 
 La méthode la plus avantageuse pour la gestion des déploiements dans
 Kubernetes est d'utiliser la  "ressource Deployment "  . Le Deployment offre
