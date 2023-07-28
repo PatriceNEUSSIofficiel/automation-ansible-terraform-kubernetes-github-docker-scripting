@@ -1,5 +1,7 @@
+#### WORK ET WAYO 
 
-#############################################@@@  VI - Ansible    @@@@################################################################
+
+# @@@  VI - Ansible    @@@@
 
 
 ####  Exercice 1 :
@@ -12,10 +14,9 @@ Un rôle qui installerait les utilitaires réseaux (ping, nslookup, dig etc…)
 Un rôle qui install et configure un serveur apache
 
 
+###  Faites usage des meilleures pratiques.  
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   Faites usage des meilleures pratiques.   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
-
-#################################@@@  VII - Exercice de consolidation @@@@###########################################################
+# @@@  VII - Exercice de consolidation @@@@
 
 Déployer une stack LAMP sur le cluster KUBERNETES (Démontrez que vous êtes ingénieux )
 Exposez la base de données à l’aide d’un service de type clusterIp
