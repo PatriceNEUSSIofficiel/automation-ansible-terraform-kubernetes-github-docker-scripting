@@ -1,7 +1,9 @@
-	
-#############################################@@@  III - GITHUB    @@@@###############################################################
+#### WORK ET WAYO 
 
-###### Exercice 1 :
+ 
+# @@@  III - GITHUB    @@@@
+
+## Exercice 1 :
 
 Creez un repository public github à l’aide d’un script terraform . Vous renseignez une description
 mentionnant le thème de l’exercice et son but avec en début “WORKETYAMO” en majuscule
