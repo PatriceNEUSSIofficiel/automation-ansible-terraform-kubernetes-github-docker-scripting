@@ -23,7 +23,7 @@ renforcer vos compétences dans ces domaines et de vous permettre d'échouer une
 
 
 
-#############################################@@@  I - DOCKER    @@@@###################################################################
+#################@@@  I - DOCKER   @@@######################### 
 
 ####  Exercice 1:
 
@@ -40,7 +40,7 @@ Créez une image docker à partir d’une image httpd , configurez le serveur ap
 port 8000 (nom serveur:apache)
 Tagger les image et faites un push dans un docker registryBash 
 
-#############################################@@@  II - SCRIPTING    @@@@##############################################################
+################@@@  II - SCRIPTING    @@@@#############################
 
 ##### Exercice 1 :
 
@@ -53,7 +53,7 @@ Créer une script bash qui built votre image grace aux differents dockerfiles , 
 directement dans le repository
 
 
-#############################################@@@  III - GITHUB    @@@@###############################################################
+################@@@  III - GITHUB    @@@@##########################
 
 ###### Exercice 1 :
 
@@ -81,7 +81,7 @@ Expliquer la différence entre le provider et le provisionner
 Expliquez les modules et donnez leurs avantages
 
 
-#############################################@@@  V - KEBERNETES    @@@@################################################################
+##################@@@  V - KEBERNETES    @@@@#########################
 
 ##### Exercice 1 :
 
@@ -119,7 +119,7 @@ contenant les caractéristiques suivantes :
 Deux conteneurs qui utilisent les images (httpd et nginx) que vous avez creer
 
 
-#############################################@@@  VI - Ansible    @@@@################################################################
+################@@@  VI - Ansible    @@@@###########################
 
 
 ####  Exercice 1 :
@@ -133,9 +133,9 @@ Un rôle qui install et configure un serveur apache
 
 
 
-@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@   Faites usage des meilleures pratiques.   @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+@@@@@@@@@@@@@@@@   Faites usage des meilleures pratiques.   @@@@@@@@@@@@@@@@@@
 
-#################################@@@  VII - Exercice de consolidation @@@@###########################################################
+############@@@  VII - Exercice de consolidation @@@@#########
 
 Déployer une stack LAMP sur le cluster KUBERNETES (Démontrez que vous êtes ingénieux )
 Exposez la base de données à l’aide d’un service de type clusterIp
@@ -149,5 +149,5 @@ Exposer le serveur web à l’aide d’un service de type nodeportEtablissez la 
 
 
 =======
-                                         ###################### WORK ET YAMO ##########################3
+                                         ########### WORK ET YAMO ################
 >>>>>>> refs/remotes/origin/main
