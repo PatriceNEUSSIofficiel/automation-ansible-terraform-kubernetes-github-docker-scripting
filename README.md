@@ -133,7 +133,7 @@ Un rôle qui install et configure un serveur apache
 
 
 
-## @@@@@@@@@@@@@@@@   Faites usage des meilleures pratiques.   @@@@@@@@@@@@@@@@@@
+##    Faites usage des meilleures pratiques.   
 
 ##                                                              @@@  VII - Exercice de consolidation @@@
 
