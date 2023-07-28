@@ -1,4 +1,4 @@
-######## WORKETYAMO EXERCICES 18 juillet 2023
+###### WORKETYAMO EXERCICES 18 juillet 2023
 
 # WORK ET YAMO 
 
@@ -9,7 +9,7 @@
 
 
 
-### Objectifs
+##   Objectifs:
 
 L'objectif de ce devoir est de mettre en pratique plusieurs concepts et technologies liés à
 l'administration système, au développement d'applications et à l'infrastructure. Les différents
@@ -23,7 +23,7 @@ renforcer vos compétences dans ces domaines et de vous permettre d'échouer une
 
 
 
-#################@@@  I - DOCKER   @@@######################### 
+##                                                              @@@  I - DOCKER   @@@
 
 ####  Exercice 1:
 
@@ -32,7 +32,7 @@ contenu du fichier authorized_keys de l'utilisateur "worketyamo" avec votre prop
 Installer python 3 dans cet image de conteneur
 Une fois votre image créé tagger l’image et faites un push vers une docker registry
 
-##### Exercice 2:
+### Exercice 2:
 
 Créez une image docker à partir de l’image nginx:latest . configurez le serveur nginx à écouter sur
 le port 5000 (nom serveur:nginx)
@@ -40,22 +40,22 @@ Créez une image docker à partir d’une image httpd , configurez le serveur ap
 port 8000 (nom serveur:apache)
 Tagger les image et faites un push dans un docker registryBash 
 
-################@@@  II - SCRIPTING    @@@@#############################
+##                                                             @@@  II - SCRIPTING    @@@@
 
-##### Exercice 1 :
+### Exercice 1 :
 
 Créer un script bash réutilisable qui vous permettra de créer des modules terraform
 automatiquement ( variables.tf, main.tf, ouputs.tf et Readme.md)
 
-##### EXERCICE 2 : 
+### EXERCICE 2 : 
 
 Créer une script bash qui built votre image grace aux differents dockerfiles , les tag et les push
 directement dans le repository
 
 
-################@@@  III - GITHUB    @@@@##########################
+##                                                             @@@  III - GITHUB    @@@@
 
-###### Exercice 1 :
+### Exercice 1 :
 
 Creez un repository public github à l’aide d’un script terraform . Vous renseignez une description
 mentionnant le thème de l’exercice et son but avec en début “WORKETYAMO” en majuscule
@@ -65,9 +65,9 @@ NB : CRÉER UN MODULE TERRAFORM POUR CELA ET PROTÉGEZ LES
 INFORMATIONS SENSIBLES
 
 
-#############################################@@@  IV - TERRAFORM    @@@@#############################################################
+##                                                              @@@  IV - TERRAFORM @@@@    
  
-###### Exercice 1 :
+### Exercice 1 :
 
 Configurez le backend directement sur le cluster kubernetes (secret_suffix=[votre nom])
 Listez les différents providers et leurs versions
@@ -81,9 +81,9 @@ Expliquer la différence entre le provider et le provisionner
 Expliquez les modules et donnez leurs avantages
 
 
-##################@@@  V - KEBERNETES    @@@@#########################
+##                                                             @@@  V - KEBERNETES    @@@@
 
-##### Exercice 1 :
+### Exercice 1 :
 
 Creez un module terraform nommé kubernetes dans ce module creez un module kubernetes-sshDans le fichier main.tf du module kubernetes appelez les différents modules
 Dans le module kubernetes-ssh :
@@ -95,23 +95,23 @@ Grâce aux provisionner renvoyer la valeur de l’output dans un fichier appelé
 votre dossier
 
 
-###### Exercice 2 :
+#### Exercice 2 :
 
 Refaites le même exercice en utilisant des replica sets avec 3 réplicats utilisant les mêmes
 information que dans l’exercice 1
 
-###### Exercice 3 :
+### Exercice 3 :
 
 Refaites le même exercice en utilisant un déploiement avec 3 réplicats utilisant les mêmes
 information que dans l’exercice 1
 
-###### Exercice 4 :
+### Exercice 4 :
 
 Dites la différence entre les 3 méthodes
 Dites la différence qui existe en un replication controller et un replica set
 Donnez la méthode la plus avantageuse et dites pourquoi .
 
-#### Exercice 5 :
+### Exercice 5 :
 
 Créez un module nommé kubernetes-server dans le module kubernetes .
 Dans ce module creez un service grâce à un déploiement ; Ce deployment doit repliquer un pod
@@ -119,10 +119,10 @@ contenant les caractéristiques suivantes :
 Deux conteneurs qui utilisent les images (httpd et nginx) que vous avez creer
 
 
-################@@@  VI - Ansible    @@@@###########################
+##                                                                  @@@  VI - Ansible    @@@@
 
 
-####  Exercice 1 :
+###  Exercice 1 :
 
 Grâce aux services que vous avez créé dans Kubernetes-ssh Créer un inventory avec 3 groupes .
 Faites usage des group_vars et host_vars pour gérer vos variables
@@ -133,9 +133,9 @@ Un rôle qui install et configure un serveur apache
 
 
 
-@@@@@@@@@@@@@@@@   Faites usage des meilleures pratiques.   @@@@@@@@@@@@@@@@@@
+## @@@@@@@@@@@@@@@@   Faites usage des meilleures pratiques.   @@@@@@@@@@@@@@@@@@
 
-############@@@  VII - Exercice de consolidation @@@@#########
+##                                                              @@@  VII - Exercice de consolidation @@@
 
 Déployer une stack LAMP sur le cluster KUBERNETES (Démontrez que vous êtes ingénieux )
 Exposez la base de données à l’aide d’un service de type clusterIp
@@ -149,5 +149,5 @@ Exposer le serveur web à l’aide d’un service de type nodeportEtablissez la 
 
 
 =======
-                                         ########### WORK ET YAMO ################
+##                                                                              WORK ET YAMO 
 >>>>>>> refs/remotes/origin/main
