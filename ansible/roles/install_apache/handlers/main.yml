@@ -1,0 +1,7 @@
+---
+# handlers file for configuration
+- name: "Restarting server based on file changing"
+  service: 
+    name: apache2 
+    state: restarted 
+   

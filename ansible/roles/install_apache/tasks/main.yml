@@ -1,0 +1,30 @@
+---
+# tasks file for configuration
+- name: "Upgrading all dependencies on the server" 
+  apt:
+    name: "*"
+    state: latest   
+
+- name: "Installation of some depencies"
+  apt: 
+    name: "{{ dependencies }}"
+    state: present 
+  when: ansible_facts.os_family | lower == 'debian'
+
+- name:  "starting Apache2 services"
+  service: 
+    name: apache2 
+    state: started
+
+- name: "Changing apache2 000-default.conf file"
+  template: 
+    src: "{{ configuration_src_file }}"
+    dest: "{{ configuration_dest_file }}"
+  notify: "Restarting server based on file changing"
+
+- name: "changing port "
+  template: 
+    src: "{{ port_src_file }}"
+    dest: "{{ port_dest_file }}"
+  notify: "Restarting server based on file changing"
+

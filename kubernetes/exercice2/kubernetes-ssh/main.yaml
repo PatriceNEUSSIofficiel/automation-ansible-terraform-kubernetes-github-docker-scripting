@@ -1,0 +1,22 @@
+apiVersion: apps/v1 
+kind: ReplicaSet 
+metadata: 
+  name: patrice-replica
+  labels: 
+    owner: patrice
+    type: web-server 
+spec: 
+  template: 
+    metadata: 
+      name:  patrice-replica
+      labels: 
+        owner: patrice
+        type: web-server
+    spec: 
+      containers: 
+      - name:  my-ct
+        image: patricehub/ssh-docker:latest
+  replicas: 3
+  selector: 
+    matchLabels:
+      type: web-server

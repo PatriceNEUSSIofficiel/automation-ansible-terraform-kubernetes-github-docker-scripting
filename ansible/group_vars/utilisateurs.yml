@@ -1,0 +1,16 @@
+users:
+- name: user1
+ ansible_ssh_private_key_file: /home/patrice/Documents/WORKETYAMO_EXERCISES/ansible/key/key1
+ ansible_host: localhost 
+ ansible_sudo_pass: patrice
+
+- name: user2
+ ansible_ssh_private_key_file: /home/patrice/Documents/WORKETYAMO_EXERCISES/ansible/key/key2
+ ansible_host: localhost 
+ ansible_sudo_pass: patrice
+
+- name: user3
+ ansible_ssh_private_key_file: /home/patrice/Documents/WORKETYAMO_EXERCISES/ansible/key/key3
+ ansible_host: localhost 
+ ansible_sudo_pass: patrice
+

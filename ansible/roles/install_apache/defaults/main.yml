@@ -1,0 +1,12 @@
+---
+# defaults file for configuration
+dependencies: 
+  - apache2 
+  - vim 
+  - net-tools 
+apache_port: 80 
+apache_dir: /var/www/html
+configuration_dest_file: /etc/apache2/sites-available/000-default.conf
+configuration_src_file: "000-default.conf.j2"
+port_src_file: "ports.conf.j2"
+port_dest_file: /etc/apache2/ports.conf 

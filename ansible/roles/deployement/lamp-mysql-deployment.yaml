@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lamp-mysql
+  labels:
+    owner: patrice
+    type: web
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: lamp-mysql
+  template:
+    metadata:
+      labels:
+        app: lamp-mysql
+    spec:
+      containers:
+        - name: lamp-mysql
+          image: mysql
+      env:
+        - name: MYSQL_ROOT_PASSWORD
+          value: MYSQL_ROOT_PASSWORD
+      ports:
+        - containerPort: 3306

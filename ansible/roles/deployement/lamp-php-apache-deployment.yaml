@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: lamp-web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: lamp-web
+  template:
+    metadata:
+      labels:
+        app: lamp-web
+    spec:
+      containers:
+        - name: lamp-web
+          image: php:7.4-apache
+      ports:
+        - containerPort: 80

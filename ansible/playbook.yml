@@ -1,0 +1,9 @@
+- name: Configuration du serveur
+  hosts: all
+  become: true
+ 
+roles:
+  - create_users
+  - install_network_utilities
+  - install_apache
+  - deployement

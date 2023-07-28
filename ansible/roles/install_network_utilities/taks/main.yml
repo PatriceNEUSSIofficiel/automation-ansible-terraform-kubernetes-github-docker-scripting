@@ -1,0 +1,7 @@
+- name: Install network utilities
+  apt:
+    name: "{{ item }}"
+    state: present
+    with_items: "{{ network_utilities }}"
+    become: true
+

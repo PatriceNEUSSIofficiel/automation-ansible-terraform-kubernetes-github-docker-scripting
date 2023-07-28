@@ -1,0 +1,14 @@
+- name: Create users
+  user:
+    name: "{{ item.name }}"
+    state: present
+  with_items: "{{ users }}"
+  become: true
+- name: Add SSH keys for users
+  authorized_key:
+  user: "{{ item.name }}"
+  key: "{{ item.ansible_ssh_private_key_file }}"
+  with_items: "{{ users }}"
+  become: true
+
+
