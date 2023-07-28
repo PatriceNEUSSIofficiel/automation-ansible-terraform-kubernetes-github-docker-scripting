@@ -1,8 +1,9 @@
+#### WORK ET WAYO 
 
 
-#############################################@@@  IV - TERRAFORM    @@@@#############################################################
+# @@@  IV - TERRAFORM    @@@@
  
-###### Exercice 1 :
+## Exercice 1 :
 
 Configurez le backend directement sur le cluster kubernetes (secret_suffix=[votre nom])
 Listez les différents providers et leurs versions
